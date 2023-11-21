@@ -7,7 +7,7 @@ import { Network, Provider } from "aptos";
 
 export const provider = new Provider(Network.TESTNET);
 
-export const moduleAddress = "48a138b4c3228d1982d99142f72e9cd38cad4d77280c2f669abdd1c9ca084eaf";
+export const moduleAddress = "0x48a138b4c3228d1982d99142f72e9cd38cad4d77280c2f669abdd1c9ca084eaf";
 
 function App() {
   const { account, signAndSubmitTransaction } = useWallet();
