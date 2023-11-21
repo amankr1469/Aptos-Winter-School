@@ -24,7 +24,7 @@ function App() {
     try {
       const todoListResource = await provider.getAccountResource(
         account?.address,
-        `${moduleAddress}::counter::CounterHolder`,
+        `${moduleAddress}::counter::get_count`,
       );
       let data = JSON.parse((todoListResource?.data as any).count);
       setCounter(data);
