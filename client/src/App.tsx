@@ -47,7 +47,7 @@ function App() {
     setTransactionInProgress(true);
     const payload = {
       type: "entry_function_payload",
-      function: `${moduleAddress}::myCounter::increment`,
+      function: `${moduleAddress}::my_counter::increment`,
       type_arguments: [],
       arguments: [],
     };
