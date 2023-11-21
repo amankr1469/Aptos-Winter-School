@@ -2,7 +2,7 @@ module my_counter_addr::counter {
     use std::signer;
 
     struct CounterHolder has key {
-        count: u64
+        count: u64 
     }
 
     public fun get_count(addr: address): u64 acquires CounterHolder {
