@@ -24,7 +24,7 @@ function App() {
     try {
       const todoListResource = await provider.getAccountResource(
         account?.address,
-        `${moduleAddress}::counter::get_count`,
+        `${moduleAddress}::counter::CounterHolder`,
       );
       let data = JSON.parse((todoListResource?.data as any).count);
       setCounter(data);
@@ -37,7 +37,7 @@ function App() {
     }
   }
 
-  const timer = () => { setInterval(() => { setReload(1); fetch() }, 5000); }
+  const timer = () => { setInterval(() => { setReload(1); fetch() }, 10000); }
 
   useEffect(() => {
     timer();
